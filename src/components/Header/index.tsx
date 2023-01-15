@@ -13,12 +13,16 @@ export const Header = () => {
               <GithubLogo size={20} />
             </a>
           </div>
-
-          <div className="w-10 h-10 flex justify-center items-center text-white-100 bg-blue-500 rounded-md p-2 hover:bg-blue-700 transition-all duration-300 ease-in-out cursor-pointer">
-            <Sun size={20} />
-          </div>
         </div>
       </nav>
     </header>
+  )
+}
+
+const ButtonSun = () => {
+  return (
+    <div className="w-10 h-10 flex justify-center items-center text-white-100 bg-blue-500 rounded-md p-2 hover:bg-blue-700 transition-all duration-300 ease-in-out cursor-pointer">
+      <Sun size={20} />
+    </div>
   )
 }

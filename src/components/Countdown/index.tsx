@@ -58,7 +58,7 @@ export const Countdown = () => {
       <div className="flex flex-col gap-5 items-center">
         <h1 className="text-xl mt-5 leading-7 uppercase">Timer</h1>
         <div className="flex gap-2 flex-col">
-          <label htmlFor="minutes">Quanto minutos você quer?</label>
+          <label htmlFor="minutes">Quantos minutos você quer?</label>
           <input
             type="text"
             className="text-white-500 border-b-2 border-b-green-100 outline-0 bg-blue-700 pl-1 focus:border-b-green-300 text-center"
