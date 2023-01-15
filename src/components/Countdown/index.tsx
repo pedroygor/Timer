@@ -54,27 +54,27 @@ export const Countdown = () => {
   const secondsRemaining = countdown % 60
 
   return (
-    <div className="w-full md:w-2/5 h-96 mx-auto bg-blue-700 rounded-md border-b-8 border-b-red-300">
+    <div className="w-full md:w-2/5 h-96 mx-auto bg-white-400 dark:bg-blue-700 rounded-md border-b-8 border-b-red-300">
       <div className="flex flex-col gap-5 items-center">
         <h1 className="text-xl mt-5 leading-7 uppercase">Timer</h1>
         <div className="flex gap-2 flex-col">
           <label htmlFor="minutes">Quantos minutos você quer?</label>
           <input
             type="text"
-            className="text-white-500 border-b-2 border-b-green-100 outline-0 bg-blue-700 pl-1 focus:border-b-green-300 text-center"
+            className="text-black text-xl dark:text-white-500 border-b-2 border-b-green-100 outline-0 bg-white-400 dark:bg-blue-700 pl-1 focus:border-b-green-300 text-center"
             onChange={handleChange}
             value={inputNumber}
           />
         </div>
         <div className="flex gap-5">
           <div className="md:w-28 flex flex-col gap-3 justify-center items-center">
-            <p className="border bg-blue-700 w-24 h-14 text-4xl flex justify-center items-center rounded-md">
+            <p className="border bg-white dark:bg-blue-700 w-24 h-14 text-4xl flex justify-center items-center rounded-md">
               {minutesRemaining}
             </p>
             <p>Minutos</p>
           </div>
           <div className="md:w-28 flex flex-col gap-3 justify-center items-center">
-            <p className="border bg-blue-700 w-24 h-14 text-4xl flex justify-center items-center rounded-md">
+            <p className="border bg-white dark:bg-blue-700 w-24 h-14 text-4xl flex justify-center items-center rounded-md">
               {secondsRemaining < 10
                 ? `0${secondsRemaining}`
                 : secondsRemaining}
@@ -84,17 +84,17 @@ export const Countdown = () => {
         </div>
         <div className="flex gap-2">
           <button
-            className="bg-green-300 w-full md:w-28 h-10 rounded-md uppercase text-lg transition-all duration-300 ease-in-out hover:bg-green-100 text-white-100"
+            className="bg-green-300 w-full md:w-28 h-10 rounded-md uppercase text-lg transition-all duration-300 ease-in-out hover:bg-emerald-600 text-white-100"
             onClick={handleStart}>
             Start
           </button>
           <button
-            className="w-full md:w-28 h-10 rounded-md border-2 border-white-400 uppercase text-lg transition-all duration-300 ease-in-out hover:bg-blue-500 text-white-100"
+            className="w-full md:w-28 h-10 rounded-md border border-gray-400 uppercase text-lg transition-all duration-300 ease-in-out bg-white-300 hover:bg-gray-400  dark:bg-blue-700 dark:hover:bg-blue-500 text-black dark:text-white-100"
             onClick={handleStop}>
             Pause
           </button>
           <button
-            className="bg-red-300 w-full md:w-28 h-10 rounded-md uppercase text-lg transition-all duration-300 ease-in-out hover:opacity-75 text-white-100"
+            className="bg-red-300 w-full md:w-28 h-10 rounded-md uppercase text-lg transition-all duration-300 ease-in-out hover:bg-red-500 text-white-100"
             onClick={handleReset}>
             Reset
           </button>

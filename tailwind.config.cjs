@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    darkMode: 'class',
     
     extend: {
       colors: {
@@ -24,9 +24,6 @@ module.exports = {
         'red-300': '#FD6259',
         'black-100': '#000000',
         'yellow-300': '#E9CA29',
-      },
-      screens: {
-        'dark': {'raw': '(prefers-color-scheme: dark)'},
       },
     },
   },
