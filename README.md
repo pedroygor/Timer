@@ -25,6 +25,10 @@ $ npm run dev
 3. Clique no botão "Pause" para interromper a contagem regressiva
 4. Clique no botão "Reset" para zerar a contagem regressiva
 
+### Figma
+
+- [Figma](https://www.figma.com/community/file/1043830039993297065)
+
 ### Autor
 
 - [@pedroygor](https://www.github.com/pedroygor)
