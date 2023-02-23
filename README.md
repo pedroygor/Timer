@@ -1,4 +1,10 @@
-# Timer
+<h1 align="center">Timer</h1>
+
+<p align="center">
+  <img src="src/assets/timer.png" width="100%">
+</p>
+
+## Sobre o Projeto
 
 Este projeto é um timer de contagem regressiva construído com TypeScript, React e Tailwind.
 
